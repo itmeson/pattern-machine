@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--A pattern machine that allows selecting the number of rows and columns,
+    generates a grid of small clickable divs
+    and changes the color of the divs each time you click on them-->
+    <head>
+        <meta charset="utf-8">
+        <title>Pattern Machine</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="selectrows">
+                <input type="number" name="rows" id="rows" min="1" max="100" value="10">
+                <input type="number" name="cols" id="cols" min="1" max="100" value="10">
+                <input type="submit" value="Submit" id="submit">
+        </div>
+        <div id="gridofcells"></div>
+        <script src="script.js"></script>
+
+    </body>
+</html>
