@@ -1,6 +1,9 @@
 .cell {
-    width: 50px;
-    height: 50px;
+    max-width: 100px;
+    max-height: 100px;
+    width: 5%;
+    aspect-ratio: 1/1;
+    min-width: 20px;
     background-color: yellow;
     border-style: solid;
     border-width: 1px;
@@ -8,8 +11,10 @@
 }
 
 .row {
+    max-height: 100px;
+    min-height: 20px;
+    height: 5%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 10px;
 }
@@ -17,6 +22,13 @@
 #selectrows {
     display: flex;
     flex-wrap: wrap;
+    justify-content: left;
+    margin-bottom: 40px;
+}
+
+#gridofcells {
+    width: 80%;
+    aspect-ratio: 1/1;
     justify-content: center;
     margin-bottom: 40px;
 }
